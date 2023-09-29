@@ -1,0 +1,239 @@
+<mxfile host="65bd71144e">
+    <diagram id="V2_XtWaNNOW0nYWTkZJ7" name="Page-1">
+        <mxGraphModel dx="539" dy="2262" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="9" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Relire ses notes&amp;nbsp;&lt;/font&gt;" style="edgeStyle=none;html=1;fontSize=18;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="57" edge="1">
+                    <mxGeometry x="-0.1892" relative="1" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Se fier à sa mémoire" style="edgeStyle=none;html=1;fontSize=20;" parent="1" source="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1580" y="388" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(42, 37, 47);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2024px%3B%26quot%3B%26gt%3BActivation%20d'un%20dispositif%20temporel%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22350%22%20y%3D%22590%22%20width%3D%22195%22%20height%3D%2290%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" parent="14" vertex="1" connectable="0">
+                    <mxGeometry x="-0.323" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(42, 37, 47);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2024px%3B%26quot%3B%26gt%3BActivation%20d'un%20dispositif%20temporel%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22350%22%20y%3D%22590%22%20width%3D%22195%22%20height%3D%2290%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" parent="14" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2469" y="2" relative="1" as="geometry">
+                        <mxPoint x="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous&lt;br&gt;activez le &lt;br&gt;dispositif&lt;br&gt;temporel&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015.88" y="300" width="224.25" height="162.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="4" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Le dispositif temporel est restauré(Allez-retour)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="998.26" y="180" width="259.5" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Passé" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=20;" parent="1" target="65" edge="1">
+                    <mxGeometry x="0.0911" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="1124.0806451612902" y="740" as="sourcePoint"/>
+                        <mxPoint x="1124.5" y="850" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="65" edge="1">
+                    <mxGeometry x="-0.0286" y="-1" relative="1" as="geometry">
+                        <mxPoint x="1125.4350859453994" y="1009.4823053589485" as="sourcePoint"/>
+                        <mxPoint x="1126" y="1060" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" parent="1" source="13" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1693" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Ère prehistorique (Meurt dévoré par un T rex)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1576" y="340" width="234" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=20;" parent="1" source="28" target="41" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous trouvez Leonard de Vinci&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1026.75" y="1310" width="195" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="86" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2300" y="920"/>
+                            <mxPoint x="2300" y="225"/>
+                            <mxPoint x="1931" y="225"/>
+                        </Array>
+                        <mxPoint x="2199.4368932038833" y="440" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Non&lt;/font&gt;" style="edgeStyle=none;html=1;fontSize=20;" parent="1" source="41" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1323.75" y="1550"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Oui&lt;/font&gt;" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=20;" parent="1" source="41" target="101" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Avez-vous des&lt;br&gt;informations?&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1004.75" y="1470" width="237" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="49" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2300" y="1550"/>
+                            <mxPoint x="2300" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous continuez à&lt;br&gt;boire avec DeVinci&lt;br&gt;et réflechi le lendemain&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1460" y="1492.5" width="216.25" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="57" target="58" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous avez appris comment ça marche&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1028" y="530" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="Bouton rouge" style="edgeStyle=none;html=1;fontSize=22;fontColor=#FFFFFF;" parent="1" source="58" target="77" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Futur&lt;/font&gt;" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;" parent="1" source="58" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Quelle est la destination&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1031.5" y="630" width="193" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="61" target="66" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Arrivé dans un futur apocalyptique&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1571.25" y="650" width="210" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;span style=&quot;color: rgb(240, 240, 240); font-size: 24px;&quot;&gt;Arrivé à l'époque&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-size: 24px;&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-size: 24px;&quot;&gt;de la Renaissance&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=22;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="1004.75" y="880" width="241.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="Base militaire" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="66" target="84" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="Ville" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="66" target="86" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Où trouver des&lt;br&gt;informations?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1560" y="840" width="232.5" height="162.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="La taverne" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="68" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="Les gardes" style="edgeStyle=none;html=1;fontSize=22;fontColor=#FFFFFF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="68" target="71" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="1103" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Les passants&lt;/font&gt;" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="68" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1330" y="1103"/>
+                            <mxPoint x="1330" y="1355"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Où trouver&lt;br&gt;de l'aide&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1029.25" y="1030" width="193" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="71" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="400" y="1103"/>
+                            <mxPoint x="400" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous restaurer l'équillibre temporel et sauver l'humanité&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1010.25" y="2140" width="232" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;font style=&quot;font-size: 22px;&quot; color=&quot;#f0f0f0&quot;&gt;Ils vous prennent pour un fou et vous emprisone&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=22;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="1052.5" width="241.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=none;html=1;fontSize=22;fontColor=#FFFFFF;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="77" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="702.5" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="400" y="700"/>
+                            <mxPoint x="400" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Ère préhistorique (Meurt dévoré par un T rex)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="657.5" width="195" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;" parent="1" source="84" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2300" y="1155"/>
+                            <mxPoint x="2300" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous trouvez des informations sur ce qui est arrivé (heure: 16h00)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1560" y="1100" width="230" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Des bandits détruisent votre dispotif temporel&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1928.75" y="866.25" width="230" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="16h00" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="89" target="75" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="22h00" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="89" target="91" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="7h00" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="89" target="93" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Quel est l'heure exacte?&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1006.5" y="1880" width="237" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="91" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2300" y="1950"/>
+                            <mxPoint x="2300" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Vous causez une apocalypse prématurée&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1452.62" y="1905" width="232" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=22;fontColor=#FFFFFF;" parent="1" source="93" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="410" y="1960"/>
+                            <mxPoint x="400" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Vous causez une apocalypse prématurée&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="629.9999999999999" y="1905" width="232" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Genre: Sci-fi, futuristique, fictif&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Inspiration: Back To The Future&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Nom: Time Rescue&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de fond du site:&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;#0b424d&lt;/font&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de fond du contenu:&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;#4dd4f0&lt;/font&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de la police:&amp;nbsp;&lt;span style=&quot;color: rgb(232, 234, 237); text-align: start; background-color: rgb(32, 33, 36);&quot;&gt;#000000&lt;/span&gt;&lt;/font&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de fond des boutons: #0b424d&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de fond des boutons en hover: #000000&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de la police des boutons: #FFFFFF&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-size: 22px;&quot;&gt;- Couleur de la police des boutons en hover: #FFFFFF&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="-230" width="720" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="101" target="89" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Vous retournez à son atelier&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1025.75" y="1720" width="195" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
