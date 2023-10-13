@@ -1,6 +1,6 @@
 body {
   background-color: #0b424d;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #000000;
   text-align: center;
 }
@@ -9,6 +9,7 @@ body {
   display: flex;
   width: 700px;
   min-height: 100px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
   flex-direction: column;
@@ -20,15 +21,26 @@ body {
 
 #logo {
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 35px;
+  margin: 0;
 }
 
 img {
-  max-width: 100%;
-  max-height: auto;
+  width: 540px;
+  height: 540px;
 }
 
-#options {
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 50px;
+
+  margin: 0px;
+}
+
+.boutons {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -45,5 +57,5 @@ button {
 
 button:hover {
   background-color: #000000;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }

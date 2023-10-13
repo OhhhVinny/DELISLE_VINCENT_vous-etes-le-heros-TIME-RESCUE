@@ -1,9 +1,13 @@
+// Variable qui agit comme clé du chapitre taverne
+let twist = false;
+
+// Les différent chapitres de l'histoire
 const chapters = {
   debut: {
-    titre: "Le dispositif temporel est restauré",
+    titre: "Le dispositif temporel",
     description:
       "Le gouvernement a annoncé qu'une catastrophe apocalyptique se produira le 31 décembre 2050. Un homme savant du nom de Jean a réparé son dispositif pour voyager dans le temps mais doit être réparer à chaque allez-retour. Jean a parfois des troubles de mémoire et n'est plus certain de comment l'activer.",
-    image: "assets/image_engin_temporel.jpeg",
+    image: "assets/debut.jpg",
     boutons: [
       { titre: "Avec sa mémoire", destination: "mort1" },
       { titre: "Relire ses notes", destination: "decision" },
@@ -13,7 +17,7 @@ const chapters = {
   decision: {
     titre: "Choix de la destination",
     description:
-      "Après avoir bien relu vos notes, trois destinations temporelles sont possible pour Jean'",
+      "Après avoir bien relu vos notes, trois destinations temporelles sont possible pour Jean!",
     image: "assets/decision.jpg",
     boutons: [
       { titre: "Le futur", destination: "futur" },
@@ -23,7 +27,7 @@ const chapters = {
   },
 
   futur: {
-    titre: "Arrivé dans un futur apocalyptique",
+    titre: "Atterissage apocalyptique",
     description:
       "Vous vous téléportez dans le stationnement du métro Montmorency et tous les bâtiments sont détruits avec aucun signe de vie à l'horizon. Vous vous demandez où se rendre pour trouver des informations sur la catastrophe ",
     image: "assets/futur.jpg",
@@ -54,10 +58,9 @@ const chapters = {
   },
 
   taverne: {
-    titre:
-      "Vous rentrez dans la taverne de la ville et vous appercevez Léonard de Vinci entrain de boire une bière seul au bar. Vous lui expliquez la situation. Léonard en panique vous demande si vous avez des preuves",
+    titre: "La taverne du coin",
     description:
-      "Vous vous téléportez dans le stationnement du métro Montmorency et tous les bâtiments sont détruits avec aucun signe de vie à l'horizon. Vous vous demandez où se rendre pour trouver des informations sur la catastrophe ",
+      "Vous rentrez dans la taverne de la ville et vous appercevez Léonard de Vinci entrain de boire une bière seul au bar. Vous lui expliquez la situation. Léonard en panique vous demande si vous avez des preuves",
     image: "assets/taverne.jpg",
     boutons: [
       { titre: "Oui", destination: "atelier" },
@@ -68,7 +71,7 @@ const chapters = {
   atelier: {
     titre: "L'atelier",
     description:
-      "Vous rentrez dans l'atelier du célèbre Leonard et celui-ci commence à lire les documents que vous avez apportés. Il vous expliquent qu'un déreglement temporel subit en 2023 a causé la catastrophe de 2050. À grande vitesse, il se met à construire une petite horloge. Après un certain temps, il ne reste qu'une seule étape et s'est de régler l'horloge à l'heure exacte de l'apocalypse. L'avenir est entre vos mains, dit-il d'un ton inquiet ",
+      "Vous rentrez dans l'atelier du célèbre Leonard et celui-ci commence à lire les documents que vous avez apportés. Il vous expliquent qu'un déreglement temporel subit en 2023 a causé la catastrophe de 2050. À grande vitesse, il se met à construire une petite horloge. Après un certain temps, il ne reste qu'une seule étape et s'est de régler l'horloge à l'heure exacte de l'apocalypse. L'avenir est entre vos mains, dit-il d'un ton inquiet...",
     image: "assets/atelier.jpg",
     boutons: [
       { titre: "7h00", destination: "mort5" },
@@ -126,19 +129,49 @@ const chapters = {
   },
 };
 
+// Fonction permettant la fonctionnalité et l'affichage des éléments selon le chapitre
 function goToChapter(chapitre) {
-  if (chapters[chapitre]) {
-    const temp = chapters[chapitre];
-    console.log(temp.titre);
-    console.log(temp.description);
-    console.log("Option:");
+  // Change le titre pour celui du chapitre approprié
+  const titre = document.querySelector(".titre");
+  titre.innerHTML = chapters[chapitre].titre;
 
-    for (const bouton of temp.boutons) {
-      console.log("-", bouton.titre, "vers", bouton.destination);
-      console.log(`Tapez: goToChapter("${bouton.destination}")`);
+  // Change la description pour celle du chapitre approprié
+  const description = document.querySelector(".description");
+  description.innerHTML = chapters[chapitre].description;
+
+  // Change le src de l'image pour celle du chapitre approprié
+  const image = document.querySelector(".image");
+  image.setAttribute("src", chapters[chapitre].image);
+
+  // Supprime les boutons présents et rajoute ceux du chapitre approprié
+  const boutons = document.querySelector(".boutons");
+  while (boutons.firstChild) {
+    boutons.removeChild(boutons.firstChild);
+  }
+  for (let i = 0; i < chapters[chapitre].boutons.length; i++) {
+    const nouveauBtn = document.createElement("button");
+    nouveauBtn.textContent = chapters[chapitre].boutons[i].titre;
+
+    if (!chapters[chapitre].boutons[i].disabled) {
+      nouveauBtn.addEventListener("click", () => {
+        goToChapter(chapters[chapitre].boutons[i].destination);
+      });
+    } else {
+      nouveauBtn.classList.add("disabled");
     }
-  } else {
-    console.log("Mauvaise clé de chapitre");
+
+    boutons.appendChild(nouveauBtn);
+  }
+
+  //Si on atteint le chapitre militaire, twist devient true
+  if (chapitre === "militaire") {
+    twist = true;
+  }
+
+  //On active/désactive le bouton qui requiert la clé selon si elle a été trouvée
+  if (chapitre === "taverne") {
+    const boutonOui = boutons.querySelector("button:first-child"); // Le premier bouton (Oui)
+    boutonOui.disabled = !twist;
   }
 }
 
