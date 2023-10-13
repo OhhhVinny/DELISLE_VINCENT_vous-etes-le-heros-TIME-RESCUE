@@ -7,4 +7,4 @@
 **Palette de couleurs:** [coolors.co](https://coolors.co/0b424d-4dd4f0-032637-000000-ffffff)  
 
 ## Diagramme
-![](assets/diagramme.png)
+![](assets/drawio/diagramme.png)

@@ -135,7 +135,7 @@ function goToChapter(chapitreNom) {
   if(typeof chapitreNom === 'string' && chapitreNom in chapters){
     const chapitre = chapters[chapitreNom];
     // Change le titre pour celui du chapitre approprié
-    const titre = document.querySelector(".titre");
+    const titre = document.querySelector(".titre"); 
     titre.innerHTML = chapitre.titre;
   
     // Change la description pour celle du chapitre approprié
@@ -151,6 +151,7 @@ function goToChapter(chapitreNom) {
     while (boutons.firstChild) {
       boutons.removeChild(boutons.firstChild);
     }
+
     for (let i = 0; i < chapitre.boutons.length; i++) {
       const btn = chapitre.boutons[i];
       const nouveauBtn = document.createElement("button");
@@ -174,7 +175,6 @@ function goToChapter(chapitreNom) {
       boutonOui.disabled = !twist;
     }
   }
-
 }
 
 goToChapter("debut");
