@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "Futuristique";
+  src: url("../fonts/Futuristic_Armour.otf") format("opentype");
+}
+
 body {
   background-color: #0b424d;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #000000;
+  color: #d2edf3;
 }
 
 #jeu {
@@ -14,29 +19,36 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #4dd4f0;
+  background-image: linear-gradient(#0b424d 0%, #4dd4f0 100%);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   border-radius: 5%;
+  text-shadow: #000000 2px 0 10px;
 }
 
 #logo {
+  font-family: "Futuristique";
   font-weight: bolder;
-  font-size: 35px;
+  font-size: 40px;
   margin: 0;
+  color: #d2edf3;
 }
 
 img {
   width: 540px;
   height: 540px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 p {
   font-size: 20px;
+  text-align: center;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0px;
+  text-decoration: underline;
+  color: #d2edf3;
 }
 
 .boutons {
@@ -46,9 +58,119 @@ h2 {
   margin-top: 20px;
 }
 
-button:hover {
-  background-color: #000000;
-  transform: scale(1.05);
+/* Style pour les boutons pris sur le site: https://getcssscan.com/css-buttons-examples (button-78)*/
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-shadow: #000000 2px 0 10px;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
 }
 
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
 
+.button-78:before,
+.button-78:after {
+  border-radius: 80px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #0b424d 0, #113a43 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#4dd4f0 0, #0b424d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, #0b424d 0%, #4dd4f0 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    linear-gradient(92.83deg, #0b424d 0, #4dd4f0 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#0b424d 0, #4dd4f0 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: 0.24;
+}
+/* Style pour les boutons pris sur le site: https://getcssscan.com/css-buttons-examples (button-78)*/
