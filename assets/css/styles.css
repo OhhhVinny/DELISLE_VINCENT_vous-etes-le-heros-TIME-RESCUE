@@ -39,6 +39,21 @@ img {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
+video {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.reset {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+}
+
 p {
   font-size: 20px;
   text-align: center;

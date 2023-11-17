@@ -7,7 +7,7 @@ const chapters = {
     titre: "LE DISPOSITIF TEMPOREL",
     description:
       "Le gouvernement a annoncé qu'une catastrophe apocalyptique se produira le 31 décembre 2050. Un homme savant du nom de Jean a réparé son dispositif pour voyager dans le temps mais doit le réparer à chaque aller-retour. Jean a parfois des troubles de mémoire et n'est plus certain de comment l'activer.",
-    image: "./assets/images/debut.jpg",
+    video: "./assets/videos/timeGif.mp4",
     boutons: [
       { titre: "Avec sa mémoire", destination: "mort1" },
       { titre: "Relire ses notes", destination: "decision" },
@@ -84,7 +84,7 @@ const chapters = {
     titre: "FIN TRAGIQUE",
     description:
       "Vous activez le dispositif temporel en vous fiant à votre mémoire et vous vous retrouvez à l'ère préhistorique près de la famille d'un T-Rex.",
-    image: "./assets/images/mort1.jpg",
+    video: "./assets/videos/trexGif.mp4",
     boutons: [{ titre: "Retour au debut", destination: "debut" }],
   },
 
@@ -129,8 +129,26 @@ const chapters = {
   },
 };
 
+//Creation de l'élément audio
+let audioElement = document.createElement("audio");
+audioElement.src = "/assets/audio/effet_sonore_ufo.mp3";
+document.body.appendChild(audioElement);
+
 // Fonction permettant la fonctionnalité et l'affichage des éléments selon le chapitre
 function goToChapter(chapitreNom) {
+  //Sauvegarde du chapitre atteint dans le local Storage
+  localStorage.setItem("chapterAtteint", chapitreNom);
+
+  audioElement.currentTime = 0;
+  audioElement.play();
+
+  //Storage et acces a la twist
+  if (twist) {
+    localStorage.setItem("twistActivated", "true");
+  } else {
+    localStorage.removeItem("twistActivated");
+  }
+
   if (typeof chapitreNom === "string" && chapitreNom in chapters) {
     const chapitre = chapters[chapitreNom];
     // Change le titre pour celui du chapitre approprié
@@ -141,9 +159,18 @@ function goToChapter(chapitreNom) {
     const description = document.querySelector(".description");
     description.innerHTML = chapitre.description;
 
-    // Change le src de l'image pour celle du chapitre approprié
-    const image = document.querySelector(".image");
-    image.setAttribute("src", chapitre.image);
+    //Recuperation du conteneur de media
+    let media = document.getElementById("media");
+    // Si l'objet a une vidéo
+    if (chapitre.video) {
+      // on creer une balise video avec les contrainte
+      media.innerHTML = `<video class="video" muted autoplay loop><source src="${chapitre.video}" type="video/mp4"></video>`;
+    } else {
+      // Si pas de vidéo, afficher l'image normalement
+      media.innerHTML = `<img class="image" src="${
+        chapitre.image
+      }" alt="${""}">`;
+    }
 
     // Supprime les boutons présents et rajoute ceux du chapitre approprié
     const boutons = document.querySelector(".boutons");
@@ -176,10 +203,31 @@ function goToChapter(chapitreNom) {
 
     //On active/désactive le bouton qui requiert la clé selon si elle a été trouvée
     if (chapitreNom === "taverne") {
-      const boutonOui = boutons.querySelector("button:first-child"); // Le premier bouton (Oui)
-      boutonOui.disabled = !twist;
+      const boutonOui = boutons.querySelector("button:nth-child(1)"); // Le premier bouton (Oui)
+      const actuel = localStorage.getItem("twistActivated");
+      boutonOui.disabled = actuel; // Inversion de la condition
     }
   }
 }
 
-goToChapter("debut");
+//Fonction pour charger le chapitre dans le storage
+function chargerProgression() {
+  let nomChapitre = localStorage.getItem("chapterAtteint");
+
+  if (nomChapitre && chapters[nomChapitre]) {
+    goToChapter(nomChapitre);
+  } else {
+    goToChapter("debut");
+  }
+}
+chargerProgression();
+
+//creation du bouton reset
+const boutonReset = document.createElement("button");
+boutonReset.textContent = "Réinitialiser";
+boutonReset.classList.add("reset");
+boutonReset.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.reload();
+});
+document.body.appendChild(boutonReset);
