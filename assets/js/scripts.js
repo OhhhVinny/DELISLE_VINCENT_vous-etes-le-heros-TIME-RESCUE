@@ -1,10 +1,7 @@
-// Variable qui agit comme clé du chapitre taverne
-let twist = false;
-
 // Les différent chapitres de l'histoire
 const chapters = {
   debut: {
-    titre: "LE DISPOSITIF TEMPOREL",
+    titre: "LE DISPOSITIF TEMPOREL!",
     description:
       "Le gouvernement a annoncé qu'une catastrophe apocalyptique se produira le 31 décembre 2050. Un homme savant du nom de Jean a réparé son dispositif pour voyager dans le temps mais doit le réparer à chaque aller-retour. Jean a parfois des troubles de mémoire et n'est plus certain de comment l'activer.",
     video: "./assets/videos/timeGif.mp4",
@@ -191,6 +188,10 @@ function goToChapter(chapitreNom) {
       boutons.appendChild(nouveauBtn);
     }
 
+    // On recupere la twist dans localStorage
+    let twist = localStorage.getItem("twistActivated");;
+
+
     //Si on atteint le chapitre militaire, twist devient true
     if (chapitreNom === "militaire") {
       twist = true;
@@ -204,8 +205,7 @@ function goToChapter(chapitreNom) {
     //On active/désactive le bouton qui requiert la clé selon si elle a été trouvée
     if (chapitreNom === "taverne") {
       const boutonOui = boutons.querySelector("button:nth-child(1)"); // Le premier bouton (Oui)
-      const actuel = localStorage.getItem("twistActivated");
-      boutonOui.disabled = actuel; // Inversion de la condition
+      boutonOui.disabled = twist; // Inversion de la condition
     }
   }
 }
@@ -231,3 +231,4 @@ boutonReset.addEventListener("click", () => {
   window.location.reload();
 });
 document.body.appendChild(boutonReset);
+
