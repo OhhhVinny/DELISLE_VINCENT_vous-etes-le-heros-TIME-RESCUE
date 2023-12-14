@@ -130,24 +130,41 @@ const chapters = {
 let audioElement = document.createElement("audio");
 audioElement.src = "/assets/audio/effet_sonore_ufo.mp3";
 document.body.appendChild(audioElement);
+//creation de la case mute
+const mute = document.createElement("input");
+mute.type = "checkbox";
+mute.classList.add("mute");
+mute.addEventListener("change", () => {
+  // statut mute dans le localStorage
+  localStorage.setItem("muteStatus", mute.checked);
+  // Mise à jour de la lecture audio en fonction du statut mute
+  audioElement.muted = mute.checked;
+});
+// Création du label associé
+const muteLabel = document.createElement("label");
+muteLabel.appendChild(document.createTextNode("Muet"));
 
 // Fonction permettant la fonctionnalité et l'affichage des éléments selon le chapitre
 function goToChapter(chapitreNom) {
+  // Récupération du statut mute depuis le localStorage
+  let muteStatus = localStorage.getItem("muteStatus");
+  //Si pas encore de localstorage de l'état du checkbox, on initialise à false
+  if (muteStatus === null) {
+    muteStatus = false;
+    localStorage.setItem("muteStatus", mute.checked);
+  }
+  // Démarrer ou arrêter l'audio en fonction du statut mute
+  if (muteStatus === "false") {
+    audioElement.currentTime = 0;
+    audioElement.play();
+  } else {
+    audioElement.pause();
+  }
+
   // On recupere la twist dans localStorage
   let twist = localStorage.getItem("twistActivated");
-
   //Sauvegarde du chapitre atteint dans le local Storage
   localStorage.setItem("chapterAtteint", chapitreNom);
-
-  audioElement.currentTime = 0;
-  audioElement.play();
-
-  //Storage et acces a la twist
-  if (!twist) {
-    localStorage.setItem("twistActivated", "true");
-  } else {
-    localStorage.removeItem("twistActivated");
-  }
 
   if (typeof chapitreNom === "string" && chapitreNom in chapters) {
     const chapitre = chapters[chapitreNom];
@@ -193,18 +210,18 @@ function goToChapter(chapitreNom) {
 
     //Si on atteint le chapitre militaire, twist devient true
     if (chapitreNom === "militaire") {
-      twist === true;
+      localStorage.setItem("twistActivated", "true");
     }
 
     //Si on atteint le chapitre de la fin, twist devient false pour si on recommence à jouer
     if (chapitreNom === "fin") {
-      twist === false;
+      localStorage.removeItem("twistActivated");
     }
 
     //On active/désactive le bouton qui requiert la clé selon si elle a été trouvée
     if (chapitreNom === "taverne") {
       const boutonOui = boutons.querySelector("button:nth-child(1)"); // Le premier bouton (Oui)
-      boutonOui.disabled = twist; // Inversion de la condition
+      boutonOui.disabled = !twist; // Inversion de la condition
     }
   }
 }
@@ -230,3 +247,5 @@ boutonReset.addEventListener("click", () => {
   window.location.reload();
 });
 document.body.appendChild(boutonReset);
+document.body.appendChild(mute);
+document.body.appendChild(muteLabel);
