@@ -88,7 +88,7 @@ const chapters = {
   mort2: {
     titre: "MONTRÉAL",
     description:
-      "Vous vous rendez en ville dans le bureau de la mairesse pour tenter de trouver des informations. Malheureusement, un groupe de bandits vous aperçoit et détruisent votre dispositif temporel.",
+      "Vous vous rendez en ville pour tenter de trouver des informations. Malheureusement, vous vous perdez dans un labyrinthe de pistes cyclables et un groupe de bandits vous aperçoit et détruisent votre dispositif temporel.",
     image: "./assets/images/mort2.jpg",
     boutons: [{ titre: "Retour au debut", destination: "debut" }],
   },
