@@ -133,6 +133,9 @@ document.body.appendChild(audioElement);
 
 // Fonction permettant la fonctionnalité et l'affichage des éléments selon le chapitre
 function goToChapter(chapitreNom) {
+  // On recupere la twist dans localStorage
+  let twist = localStorage.getItem("twistActivated");
+
   //Sauvegarde du chapitre atteint dans le local Storage
   localStorage.setItem("chapterAtteint", chapitreNom);
 
@@ -140,7 +143,7 @@ function goToChapter(chapitreNom) {
   audioElement.play();
 
   //Storage et acces a la twist
-  if (twist) {
+  if (!twist) {
     localStorage.setItem("twistActivated", "true");
   } else {
     localStorage.removeItem("twistActivated");
@@ -188,18 +191,14 @@ function goToChapter(chapitreNom) {
       boutons.appendChild(nouveauBtn);
     }
 
-    // On recupere la twist dans localStorage
-    let twist = localStorage.getItem("twistActivated");;
-
-
     //Si on atteint le chapitre militaire, twist devient true
     if (chapitreNom === "militaire") {
-      twist = true;
+      twist === true;
     }
 
     //Si on atteint le chapitre de la fin, twist devient false pour si on recommence à jouer
     if (chapitreNom === "fin") {
-      twist = false;
+      twist === false;
     }
 
     //On active/désactive le bouton qui requiert la clé selon si elle a été trouvée
@@ -225,10 +224,9 @@ chargerProgression();
 //creation du bouton reset
 const boutonReset = document.createElement("button");
 boutonReset.textContent = "Réinitialiser";
-boutonReset.classList.add("reset");
+boutonReset.classList.add("button-78");
 boutonReset.addEventListener("click", () => {
   localStorage.clear();
   window.location.reload();
 });
 document.body.appendChild(boutonReset);
-
